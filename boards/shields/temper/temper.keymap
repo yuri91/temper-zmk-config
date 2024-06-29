@@ -54,12 +54,6 @@
         };
     };
     behaviors {
-        bspc_del: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
     };
         keymap {
@@ -74,7 +68,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M       &kp COMMA      &kp DOT      &kp FSLH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                  &lt 1 ESC    MT_SHF_SPC   MT_GUI_TAB         &bspc_del     MT_CTL_RET    &lt 2 DEL
+                                  &lt 1 ESC    MT_SHF_SPC   MT_GUI_TAB        &kp BACKSPACE   MT_CTL_RET    &lt 2 DEL
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
