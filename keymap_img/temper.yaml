@@ -24,7 +24,7 @@ layers:
   - - {t: ESC, h: num_util}
     - {t: SPACE, h: ⇧}
     - {t: ↹, h: ⌘}
-    - {t: ⌫, s: ⌦}
+    - BACKSPACE
     - {t: RET, h: ⌃}
     - {t: DEL, h: symbols}
   num_util:
