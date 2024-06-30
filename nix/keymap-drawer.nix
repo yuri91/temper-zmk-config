@@ -44,7 +44,7 @@ let
       owner = "caksoylar";
       repo = "${name}";
       rev = "main";
-      sha256 = "sha256-eyCOkoVjK32cbLmC+Vgrge5ikW9nhxWc0XElUa76Ksw=";
+      sha256 = "sha256-qaqXFchwhn3rZJ4dsS9DdrGgPJfKs2nmViG77wCgpsY=";
     };
 
     format = "pyproject";
@@ -66,6 +66,7 @@ let
       homepage = "https://github.com/caksoylar/keymap-drawer";
       description = "Visualize keymaps that use advanced features like hold-taps and combos, with automatic parsing ";
       license = lib.licenses.mit;
+      mainProgram = "keymap";
     };
   };
 in

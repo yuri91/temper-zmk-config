@@ -33,6 +33,8 @@
         };
       };
 
+      keymap-drawer = nixpkgs.legacyPackages.${system}.callPackage ./nix/keymap-drawer.nix {};
+
       flash = zmk-nix.packages.${system}.flash.override { inherit firmware; };
       update = zmk-nix.packages.${system}.update;
     });
