@@ -20,7 +20,7 @@
 
       extraCmakeFlags = ["-DZMK_EXTRA_MODULES=${src}"];
 
-      zephyrDepsHash = "sha256-zv7Dp4SlQq2DHilFWXR//yQdch2OWJg5KesSbohPAhM=";
+      zephyrDepsHash = "";
 
       meta = {
         description = "ZMK firmware";
